@@ -1,0 +1,15 @@
+.color_picker {
+    display: flex;
+}
+.color_picker_p1 p {
+    font-weight: 600;
+}
+.color_picker_p2 p {
+    font-weight: 600;
+}
+.color_picker_p2 {
+    padding-left: 40px;
+}
+.overall_card {
+    margin-top: 20px;
+}

@@ -1,0 +1,493 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+.product-form__item--quantity {
+    display: none !important;
+}
+.add-to-cart.btn--secondary {
+    display: none !important;
+}
+#AddToCart-product-template {
+    display: none !important;
+}
+.product-form__quantity {
+    display: none !important;
+}
+
+.product-form__buttons {
+    display: none !important;
+}
+
+.product-form__cart-submit {
+    display: none !important;
+}
+
+.shopify-payment-button {
+    display: none !important;
+}
+
+.react-responsive-modal-root div:empty {
+    display: block;
+}
+
+.react-overlay-loader-spinner {
+    background-image: url("https://raadj.app.theringbuilder.com/apps/engagement-rings/images/diamond.gif");
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+    /* display: table; */
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+._loading_overlay_wrapper {
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black background with opacity */
+    z-index: 9;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+}
+
+._loading_overlay_wrapper div {
+    background-color: #0000004d !important;
+    display: block !important;
+}
+
+.Diamond-form .requested-form {
+    margin-bottom: 20px;
+}
+
+.Diamond-form .requested-form h2 {
+    font-size: 30px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    line-height: 1.1;
+}
+
+/* .Diamond-form .requested-form p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+} */
+
+.Diamond-form form .form-field .MuiFormControl-root,
+.Diamond-form form .form-field .MuiInput-root {
+    width: 100%;
+    /* margin: 10px 0 0 0; */
+}
+
+.Diamond-form--small .form-field .MuiFormControl-root,
+.Diamond-form--small .form-field .MuiInput-root {
+    width: 100%;
+    /* margin: 10px 0 0 0; */
+}
+
+.Diamond-form--xx-small .form-field .MuiFormControl-root,
+.Diamond-form--xx-small .form-field .MuiInput-root {
+    width: 100%;
+    /* margin: 10px 0 0 0; */
+}
+
+.Diamond-form form .form-field .MuiFormControl-root .MuiInputLabel-root,
+.Diamond-form form .form-field .MuiInput-root .MuiInputLabel-root {
+    font-size: 14px;
+    color: black;
+}
+
+.Diamond-form form .form-field .MuiFormControl-root .MuiInputLabel-shrink,
+.Diamond-form form .form-field .MuiInput-root .MuiInputLabel-shrink {
+    font-size: 15px;
+}
+
+.Diamond-form form .form-field .MuiFormControl-root .MuiInput-input,
+.Diamond-form form .form-field .MuiInput-root .MuiInput-input {
+    font-size: 14px;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.Diamond-form form .prefrence-action {
+    margin-top: 20px;
+}
+
+.Diamond-form form .prefrence-action .preference-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+#ringBuilderAdvance-product-container-q78er div:empty {
+    display: block;
+}
+
+.loading_overlay_wrapper div span {
+    display: none !important;
+}
+
+.loading_overlay_wrapper div {
+    background-color: #212b368a;
+}
+
+/* 04-06-22 */
+
+.react-responsive-modal-container {
+    overflow-y: hidden;
+}
+
+.react-responsive-modal-modal {
+    display: block;
+    margin: 20px auto;
+    max-height: 700px;
+    width: 600px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.Diamond-form .requested-form {
+    margin-bottom: 0;
+}
+
+.requested-form h2 {
+    margin-bottom: 10px;
+}
+
+.requested-form p {
+    margin-bottom: 15px;
+}
+
+.form-field .MuiOutlinedInput-root {
+    /* margin: 15px 15px 10px; */
+    width: 96%;
+}
+
+.MuiOutlinedInput-multiline {
+    padding: 15px 15px 10px !important;
+}
+
+.Diamond-form form {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.Diamond-form form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.Diamond-form form::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.Diamond-form form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+}
+
+.react-responsive-modal-root .react-responsive-modal-closeButton {
+    background-color: #000;
+    right: 0;
+    top: 0;
+}
+
+.react-responsive-modal-root .react-responsive-modal-closeButton svg path {
+    fill: #fff;
+}
+
+.contact-prefrtence .pref_container label .MuiFormControlLabel-label,
+.contact-prefrtence span {
+    font-size: 15px;
+}
+
+.Diamond-form input,
+select,
+textarea {
+    box-shadow: none !important;
+}
+
+.Diamond-form form input {
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    padding: 15px 15px 10px;
+}
+
+.MuiInputBase-root textarea {
+    min-height: 0px;
+}
+
+.MuiInputBase-root fieldset legend span {
+    font-size: 11px;
+}
+
+.MuiInputBase-root fieldset {
+    border-color: #6c757d !important;
+    border-width: 1px !important;
+}
+
+.MuiInputBase-root fieldset legend {
+    max-width: fit-content !important;
+}
+
+.form-field p {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.Diamond-form--small form {
+    padding: 6px 0 0;
+    height: 435px;
+    overflow-y: scroll;
+}
+
+.Diamond-form--small form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.Diamond-form--small form::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.Diamond-form--small form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+}
+
+.react-responsive-modal-root .popup-form-small {
+    display: block;
+    margin: 20px auto;
+    max-height: 560px;
+    width: 600px;
+}
+
+.Diamond-form--small form .form-field .MuiFormControl-root,
+.Diamond-form--small form .form-field .MuiInput-root {
+    margin: 0;
+    width: 100%;
+}
+
+.Diamond-form--small form input {
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    padding: 15px 15px 10px;
+}
+
+.Diamond-form--small input,
+select,
+textarea {
+    box-shadow: none !important;
+}
+
+.react-responsive-modal-modal.popup-form-small {
+    overflow: hidden;
+}
+
+.Diamond-form--small .MuiFormLabel-root.Mui-focused {
+    font-size: 15px;
+    color: #000;
+}
+
+.Diamond-form--xx-small form {
+    padding: 6px 0 0;
+    height: 370px;
+    overflow-y: scroll;
+}
+
+.Diamond-form--xx-small form input {
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    padding: 15px 15px 10px;
+}
+
+.Diamond-form--xx-small form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.Diamond-form--xx-small form::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.Diamond-form--xx-small form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+}
+
+.Diamond-form--xx-small input,
+select,
+textarea {
+    box-shadow: none !important;
+}
+
+.react-responsive-modal-modal.popup-form-extra-small {
+    overflow: hidden;
+}
+
+.Diamond-form--xx-small .MuiFormLabel-root.Mui-focused {
+    font-size: 15px;
+    color: #000;
+}
+
+.Diamond-form--xx-small .form-field .MuiFormControl-root,
+.Diamond-form--small form .form-field .MuiInput-root {
+    margin: 0;
+    width: 100%;
+}
+
+.MuiFormControlLabel-root {
+    margin-bottom: 0px;
+}
+
+/*
+@media (max-width: 576px) {
+    .react-responsive-modal-container {
+        overflow-y: auto;
+    }
+    .react-responsive-modal-modal {
+        margin: 1.2rem;
+        top: 50px;
+    }
+    .react-responsive-modal-root .popup-form-small {
+        margin: 1.2rem;
+        top: 50px;
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .react-responsive-modal-modal {
+        top: 10%;
+    }
+    .react-responsive-modal-root .popup-form-small {
+        top: 10%;
+    }
+} */
+
+/* @media (max-width: 992px) {
+    .react-responsive-modal-modal {
+        top: 8%;
+    }
+    .react-responsive-modal-root .popup-form-small {
+        top: 8%;
+    }
+} */
+
+/* @media (max-width: 1200px) {
+    .react-responsive-modal-modal {
+        top: 8%;
+    }
+    .react-responsive-modal-root .popup-form-small {
+        top: 8%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .react-responsive-modal-modal {
+        top: 8%;
+    }
+    .react-responsive-modal-root .popup-form-small {
+        top: 8%;
+    }
+} */
+
+select {
+    appearance: auto !important;
+    background-image: none !important;
+}
+
+.diamond-btn {
+    margin-bottom: 20px;
+}
+
+.table-title {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px 0;
+}
+
+.table th {
+    text-align: left;
+    border: 1px solid #ebebeb;
+    padding: 10px 14px;
+    font-weight: bold !important;
+}
+
+.table td {
+    text-align: left;
+    border: 1px solid #ebebeb;
+    padding: 10px 14px;
+}
+
+.productDropdown {
+    margin-bottom: 25px;
+}
+
+.ring-descreption {
+    margin-top: 25px;
+}
+
+/* 08-06-2022 */
+
+.MuiFormControl-root label {
+    letter-spacing: 0 !important;
+}
+
+.MuiInputBase-root fieldset legend span {
+    font-size: 12px !important;
+}
+
+#MainContent {
+    padding-top: 0px;
+}
+
+.MuiInputBase-root fieldset legend {
+    visibility: visible;
+}
+
+.Diamond-form form .form-field .MuiFormControl-root .MuiInputLabel-root,
+.Diamond-form form .form-field .MuiInput-root .MuiInputLabel-root {
+    color: transparent !important;
+}
+
+.Diamond-form--xx-small .MuiFormLabel-root.Mui-focused {
+    font-size: 15px;
+    color: transparent !important;
+}
+
+.Diamond-form--small .MuiFormLabel-root.Mui-focused {
+    color: transparent !important;
+}
+
+.MuiSelect-select.MuiSelect-select {
+    padding: 16px 13px 10px;
+}
+
+.MuiOutlinedInput-root {
+    margin-top: 6px;
+}
+
+.react-responsive-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .react-responsive-modal-modal {
+        width: 90%;
+    }
+}

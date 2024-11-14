@@ -1,0 +1,83 @@
+.productController ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 22px;
+    list-style: none;
+}
+.productController ul li a {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.productController ul {
+    padding-left: 0;
+}
+.productController ul li a span i {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    margin-right: 10px;
+}
+.productController .popupIcon {
+    float: left;
+    margin-right: 10px;
+}
+.productDropdown {
+    margin-bottom: 8px;
+    max-width: 326px;
+    position: relative;
+    background: transparent;
+    border: 1px solid #12121270;
+    width: 100%;
+    max-width: 44rem;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    justify-content: space-between;
+}
+
+.productDropdown span {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+}
+.ringdDropdown {
+    float: right;
+}
+.productDropdown select {
+    float: right;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: right;
+    min-height: 0;
+    padding: 0px !important;
+    /* padding-right: 28px !important; */
+}
+.allMetafields {
+    margin-bottom: 8px;
+    max-width: 326px;
+    position: relative;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.allMetafields span {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+}
+

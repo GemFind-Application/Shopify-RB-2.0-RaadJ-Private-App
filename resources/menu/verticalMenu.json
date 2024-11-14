@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "url": "/gfadmin/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "name": "Coupons",
+      "icon": "menu-icon tf-icons bx bxs-coupon",
+      "slug": "cards-basic",
+      "url": "/gfadmin/couons_index"
+    }
+  ]
+}
