@@ -1,0 +1,40 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "aea3b4d24771b8cb0c20f82a13ecef90"
+application_url = "https://raadj.app.theringbuilder.com/"
+embedded = true
+name = "Raad J RB 2.0"
+handle = "raad-j-rb-2-0"
+
+[build]
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-01"
+
+[[webhooks.subscriptions]]
+uri = "/api/erasureEndpoint"
+compliance_topics = ["customers/redact"]
+
+[[webhooks.subscriptions]]
+uri = "/api/requestEndpoint"
+compliance_topics = ["customers/data_request"]
+
+[[webhooks.subscriptions]]
+uri = "/api/shopErasureEndpoint"
+compliance_topics = ["shop/redact"]
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_locations,read_publications,read_themes,write_checkouts,write_inventory,write_products,write_publications"
+
+[auth]
+redirect_urls = ["https://raadj.app.theringbuilder.com/authenticate"]
+
+[app_proxy]
+url = "https://raadj.app.theringbuilder.com/engagement-rings"
+subpath = "engagement-rings"
+prefix = "apps"
+
+[pos]
+embedded = false

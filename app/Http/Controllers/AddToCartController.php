@@ -129,6 +129,7 @@ class AddToCartController extends Controller
         if ($request->setting_id) {
             try {
                 $settingDataRIng = $this->getRingById($request->dealer_id, $request->setting_id);
+
                 // echo '<pre>';print_r($settingDataRIng['settingData']);exit;
                 $urlRing = 'https://' . $request->shop_domain . '/admin/api/2020-07/graphql.json';
                 $qryRing = '{
