@@ -12,7 +12,6 @@ class ProductController extends Controller
     {
 		$shop = $request->shop_domain;
         $shop_data = DB::table('users')->where(['name'=>$shop])->first();
-        // $request = $shop_data->api()->rest('GET', '/admin/products.json')['body']['products']['container'];
 	    $url = 'https://'.$shop.'/api/2021-10/graphql.json';
 	    // echo '<pre>';print_r($shop_data);exit;
 		$qry = '{

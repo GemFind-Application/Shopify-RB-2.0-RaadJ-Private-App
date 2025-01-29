@@ -39,13 +39,6 @@ Route::namespace('App\\Http\\Controllers')->group(function (){
     Route::post('tryonPlanApi/{shopDomain}','PlanController@tryonPlanApi');
     Route::get('ifPlanIdExists/{shopDomain}','PlanController@ifPlanIdExists');
 
-    //IMPORT API
-    Route::post('importApi','ImportController@importApi');
-    Route::get('getImportData/{shopDomain}','ImportController@getImportData');
-    Route::post('csvImportApi','ImportController@csvImportApi');
-    Route::post('jsonImportApi','ImportController@jsonImportApi');
-    Route::get('getCsvFile','ImportController@getCsvFile');
-
     //INIT TOOL API
     Route::post('initToolApi','InitToolController@initToolApi');
 
@@ -82,16 +75,6 @@ Route::namespace('App\\Http\\Controllers')->group(function (){
 
     //GET CURRENT VERSION API
     Route::get('getCurrentVersion','SettingsController@getCurrentVersion');
-
-    //GET SUCCESS FILE CONTENT API
-    Route::get('getSuccessFileContent/{shop}','ImportController@getSuccessFileContent');
-
-    //GET FAILED FILE CONTENT API
-    Route::get('getFailedFileContent/{shop}','ImportController@getFailedFileContent');
-
-    //DELETE FILEs API
-    Route::post('clearAllLogs/{shop}','ImportController@clearAllLogs');
-    Route::get('getProduct/{shop}','ImportController@getProduct');
 
     //SAVE CSS CONFIGURATION DATA
     Route::post('saveCSSConfiguration','SettingsController@saveCSSConfiguration');
