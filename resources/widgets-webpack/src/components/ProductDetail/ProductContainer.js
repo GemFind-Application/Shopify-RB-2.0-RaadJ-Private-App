@@ -25,6 +25,9 @@ if (window.meta.product) {
 const ProductContainer = () => {
     const [ringValues, setRingValues] = useState([]);
     const [firstDropdownValue, setFirstDropdownValue] = useState("");
+    const [firstMaterialDropdownValue, setFirstMaterialDropdownValue] =
+        useState("");
+
     const [getAllMetafields, setGetAllMetafields] = useState([]);
     const [getRingSize, setRingSize] = useState("");
     const [getInitData, setGetInitData] = useState([]);
@@ -109,15 +112,25 @@ const ProductContainer = () => {
         const firstDropdown = document.getElementById(
             "Option-template--22954725015861__main-1"
         );
+        console.log("firstDropdown", firstDropdown.value);
         if (firstDropdown) {
             setFirstDropdownValue(firstDropdown.value); // Get the selected value from the dropdown
+        }
+    };
+
+    const fetchMaterialDropdownValue = () => {
+        const firstMaterialDropdown = document.getElementById(
+            "Option-template--22954725015861__main-0"
+        );
+        console.log("firstMaterialDropdown", firstMaterialDropdown.value);
+        if (firstMaterialDropdown) {
+            setFirstMaterialDropdownValue(firstMaterialDropdown.value); // Get the selected value from the dropdown
         }
     };
 
     // Use useEffect to fetch the value on component mount
     useEffect(() => {
         fetchFirstDropdownValue(); // Fetch the value when the component mounts
-
         // Optionally, you can add an event listener to handle changes in the first dropdown
         const firstDropdown = document.getElementById(
             "Option-template--22954725015861__main-1"
@@ -125,13 +138,37 @@ const ProductContainer = () => {
         if (firstDropdown) {
             firstDropdown.addEventListener("change", fetchFirstDropdownValue);
         }
-
         // Cleanup listener when component unmounts
         return () => {
             if (firstDropdown) {
                 firstDropdown.removeEventListener(
                     "change",
                     fetchFirstDropdownValue
+                );
+            }
+        };
+    }, []);
+
+    // Use useEffect to fetch the value on component mount
+    useEffect(() => {
+        fetchMaterialDropdownValue(); // Fetch the value when the component mounts
+        // Optionally, you can add an event listener to handle changes in the first dropdown
+        const firstMaterialDropdown = document.getElementById(
+            "Option-template--22954725015861__main-0"
+        );
+        if (firstMaterialDropdown) {
+            firstMaterialDropdown.addEventListener(
+                "change",
+                fetchMaterialDropdownValue
+            );
+        }
+
+        // Cleanup listener when component unmounts
+        return () => {
+            if (firstMaterialDropdown) {
+                firstMaterialDropdown.removeEventListener(
+                    "change",
+                    fetchMaterialDropdownValue
                 );
             }
         };
@@ -187,7 +224,6 @@ const ProductContainer = () => {
         };
         getInitTool();
     }, []);
-    console.log(getAllMetafields);
 
     const handleRecaptchaChange = (response) => {
         setRecaptchaToken(response);
@@ -352,11 +388,16 @@ const ProductContainer = () => {
         e.preventDefault();
         var ringData = [];
         var data = {};
+        // console.log("getRingSize", getRingSize);
+
         if (getRingSize === "") {
             data.ringsizewithdia = document.getElementById("ring_size").value;
         } else {
             data.ringsizewithdia = getRingSize;
         }
+
+        data.material = document.getElementById("material").value;
+
         data.ringmaxcarat = getAllMetafields.MaximumCarat.value
             ? getAllMetafields.MaximumCarat.value
             : "";
@@ -393,11 +434,16 @@ const ProductContainer = () => {
         e.preventDefault();
         var ringData = [];
         var data = {};
+
+        // console.log("getRingSize", getRingSize);
+
         if (getRingSize === "") {
             data.ringsizewithdia = document.getElementById("ring_size").value;
         } else {
             data.ringsizewithdia = getRingSize;
         }
+        data.material = document.getElementById("material").value;
+
         data.ringmaxcarat = getAllMetafields.MaximumCarat.value
             ? getAllMetafields.MaximumCarat.value
             : "";
@@ -415,7 +461,7 @@ const ProductContainer = () => {
             : "false";
         data.ringpath = window.location.href;
         data.product_id = window.meta.product.id;
-        //console.log(data);
+        console.log(data);
         ringData.push(data);
         setCookie("_shopify_ringsetting", JSON.stringify(ringData), {
             path: "/",
@@ -901,6 +947,19 @@ const ProductContainer = () => {
                             id="ring_size"
                             className={styles.ringdDropdown}
                             value={firstDropdownValue} // Store the first dropdown's value
+                            readOnly
+                        />
+                    </div>
+
+                    <div className={`${styles.productDropdown}`}>
+                        <span>Material</span>
+
+                        <input
+                            type="hidden"
+                            name="material"
+                            id="material"
+                            className={styles.ringdDropdown}
+                            value={firstMaterialDropdownValue} // Store the first dropdown's value
                             readOnly
                         />
                     </div>
